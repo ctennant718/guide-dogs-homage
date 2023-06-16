@@ -1,0 +1,16 @@
+@font-face {
+  font-family: 'Castledown';
+  src: url('/fonts/castledown-regular-woff2.woff2') format('woff2');
+  font-weight: 400;
+}
+
+@font-face {
+  font-family: 'Castledown';
+  src: url('/fonts/castledown-bold-woff2.woff2') format('woff2');
+  font-weight: 500;
+}
+@font-face {
+  font-family: 'Castledown';
+  src: url('/fonts/castledown-heavy-woff2.woff2') format('woff2');
+  font-weight: 700;
+}

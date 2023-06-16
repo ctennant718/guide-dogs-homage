@@ -1,0 +1,641 @@
+body {
+  font-family: "Castledown", sans-serif;
+  color: hsl(211, 100%, 18%);
+  background-color: hsl(0, 0%, 100%);
+}
+
+a:focus-visible,
+input:focus-visible {
+  outline: 1.5px dashed hsl(46, 100%, 50%);
+}
+
+@supports not selector(:focus-visible) {
+  a:focus,
+  input:focus {
+    outline: 1.5px dashed hsl(46, 100%, 50%);
+  }
+}
+.card-heading-link {
+  display: inline-block;
+  font-weight: 500;
+  text-decoration: underline;
+  font-size: 2.7rem;
+  -webkit-margin-after: 0.75em;
+          margin-block-end: 0.75em;
+  line-height: 1.25em;
+}
+.card-heading-link:focus, .card-heading-link:hover {
+  text-decoration: none;
+  color: hsl(204, 81%, 52%);
+}
+
+.button-link {
+  background-color: hsl(201, 100%, 74%);
+  color: hsl(211, 100%, 18%);
+  font-weight: 500;
+  border-radius: 2em;
+  cursor: pointer;
+  transition: background-color 0.25s ease-in-out;
+}
+.button-link:hover, .button-link:focus {
+  background-color: hsl(204, 81%, 52%);
+}
+
+.section-heading {
+  font-weight: 500;
+  font-size: 3.5rem;
+  -webkit-padding-before: 1.25em;
+          padding-block-start: 1.25em;
+  -webkit-padding-start: 0.5em;
+          padding-inline-start: 0.5em;
+  line-height: 1.25em;
+}
+
+.guide-dogs-header {
+  background-color: hsl(211, 100%, 18%);
+  color: hsl(0, 0%, 100%);
+  height: 11em;
+  padding: 1em;
+  width: 100%;
+}
+.guide-dogs-header .accessible-link-header,
+.guide-dogs-header .shop-link-header,
+.guide-dogs-header .search-bar-header,
+.guide-dogs-header .nav-toggler {
+  display: none;
+}
+
+.guide-dogs-main-content .site-nav-header {
+  display: none;
+}
+
+.header-top-wrapper {
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em;
+}
+.header-top-wrapper .nav-toggle {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.header-top-wrapper .nav-toggle-ornament {
+  font-size: 3.25rem;
+  font-weight: 700;
+}
+
+.button-link-wrapper {
+  display: flex;
+  justify-content: center;
+  -webkit-margin-before: 0.5em;
+          margin-block-start: 0.5em;
+}
+.button-link-wrapper .header-button-link {
+  font-size: 1.8rem;
+  padding: 0.75em 7em;
+}
+
+.hero-wrapper {
+  display: flex;
+  flex-direction: column;
+  -webkit-margin-after: 3em;
+          margin-block-end: 3em;
+}
+
+.hero-image {
+  background-image: url("../images/guiding_christmas_advert.jpg");
+  background-color: hsl(0, 0%, 100%);
+  background-size: cover;
+  background-position: 70% 30%;
+  height: 17.5em;
+  display: block;
+}
+
+.hero-content {
+  background-color: hsl(211, 100%, 18%);
+  color: hsl(0, 0%, 100%);
+  padding: 1.5em 1.5em 3em;
+  width: 100vw;
+}
+.hero-content .hero-title {
+  font-weight: 700;
+  font-size: 3.5rem;
+  line-height: 4.5rem;
+  -webkit-margin-after: 0.5em;
+          margin-block-end: 0.5em;
+}
+.hero-content .hero-text {
+  font-weight: 500;
+  font-size: 1.9rem;
+  -webkit-margin-after: 1.75em;
+          margin-block-end: 1.75em;
+}
+.hero-content .hero-button-link {
+  background-image: url(../images/icon_arrow_blue.svg);
+  background-repeat: no-repeat;
+  padding: 1em 4em 1em 1.5em;
+  background-position: center right 1.5em;
+  background-size: 1em 1em;
+  font-size: 1.75rem;
+}
+
+.services-component {
+  background-color: hsl(211, 100%, 18%);
+  padding: 3.5em 1.5em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(4, 1fr);
+  gap: 1.5em;
+}
+
+.services-card,
+.popular-links-card {
+  border-radius: 0.5em;
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  background-color: hsl(0, 0%, 100%);
+}
+
+.services-image,
+.popular-links-image {
+  height: 100%;
+  max-width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  aspect-ratio: 2/1;
+}
+
+.services-content,
+.popular-links-content {
+  font-size: 1.8rem;
+  padding: 1.25em 1em 1em 1em;
+  line-height: 1.25em;
+}
+
+.video-section-text {
+  font-size: 1.85rem;
+  line-height: 1.25em;
+  padding-inline: 1em 0.5em;
+}
+.video-section-text .video-section-link {
+  text-decoration: underline;
+  font-weight: 500;
+}
+.video-section-text .video-section-link:focus, .video-section-text .video-section-link:hover {
+  text-decoration: none;
+  color: hsl(204, 81%, 52%);
+}
+
+.guiding-video {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 16/9;
+  padding-inline: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+}
+
+.popular-links {
+  -webkit-border-before: 2px solid rgba(186, 182, 182, 0.3);
+          border-block-start: 2px solid rgba(186, 182, 182, 0.3);
+}
+
+.popular-links-component {
+  -webkit-padding-before: 3em;
+          padding-block-start: 3em;
+  -webkit-padding-after: 4em;
+          padding-block-end: 4em;
+  padding-inline: 1.5em;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(3, 1fr);
+  gap: 1.5em;
+}
+.popular-links-component .popular-links-card {
+  border: 2px solid rgba(186, 182, 182, 0.3);
+}
+.popular-links-component .popular-section-heading {
+  font-size: 1.7rem;
+}
+
+.guide-dogs-footer {
+  background-color: hsl(211, 100%, 18%);
+  color: hsl(0, 0%, 100%);
+  padding: 1em;
+}
+.guide-dogs-footer .footer-cards-wrapper {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-card {
+  position: relative;
+}
+.footer-card .footer-heading {
+  font-size: 2.5rem;
+  font-weight: 500;
+  border: 1px dashed hsla(0, 0%, 50%, 0.5);
+  border-radius: 0.5em;
+  -webkit-padding-start: 3em;
+          padding-inline-start: 3em;
+  padding-block: 0.75em;
+}
+.footer-card .footer-heading .footer-heading-ornament {
+  position: absolute;
+  top: 0.6em;
+  left: 1.25em;
+}
+.footer-card .footer-text-content {
+  display: none;
+}
+
+.footer-copyright-wrapper {
+  -webkit-margin-after: 3em;
+          margin-block-end: 3em;
+}
+.footer-copyright-wrapper .footer-copyright-line {
+  font-size: 1.9rem;
+}
+
+.footer-logo-wrapper {
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  grid-template-columns: repeat(2, 1fr);
+  align-content: center;
+  align-items: center;
+  justify-items: center;
+  gap: 1em;
+  -webkit-margin-after: 2em;
+          margin-block-end: 2em;
+}
+
+.footer-sitelinks-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.footer-sitelinks-wrapper .footer-sitelink {
+  font-weight: 500;
+  text-decoration: underline;
+}
+.footer-sitelinks-wrapper .footer-sitelink:focus, .footer-sitelinks-wrapper .footer-sitelink:hover {
+  text-decoration: none;
+}
+
+@media (min-width: 700px) {
+  .button-link-wrapper .header-button-link {
+    padding: 0.75em 1.5em;
+  }
+  .services-component {
+    padding: 5em 2em;
+    gap: 2em;
+  }
+  .video-section-text {
+    padding-inline: 1.5em 1em;
+  }
+  .guiding-video {
+    padding-inline: 1.5em;
+  }
+  .popular-links-component {
+    padding-inline: 2em;
+    gap: 2em;
+  }
+  .guide-dogs-footer .footer-cards-wrapper {
+    flex-direction: row;
+    -webkit-padding-after: 3em;
+            padding-block-end: 3em;
+    border-bottom: 1px dashed hsla(0, 0%, 50%, 0.5);
+  }
+  .footer-card {
+    display: flex;
+    flex-direction: column;
+    border-left: 1px dashed hsla(0, 0%, 50%, 0.5);
+  }
+  .footer-card:nth-child(1) {
+    border-left: none;
+    -webkit-padding-end: 1em;
+            padding-inline-end: 1em;
+  }
+  .footer-card .footer-heading {
+    font-size: 3.5rem;
+    border: none;
+    padding-inline: 0;
+    -webkit-padding-after: 0;
+            padding-block-end: 0;
+    -webkit-margin-after: 0.5em;
+            margin-block-end: 0.5em;
+  }
+  .footer-card:nth-child(2) {
+    padding-inline: 1.5em;
+  }
+  .footer-card:nth-child(2) .footer-heading {
+    font-size: 3.2rem;
+  }
+  .footer-card:nth-child(3) {
+    -webkit-padding-start: 1em;
+            padding-inline-start: 1em;
+  }
+  .footer-heading-ornament {
+    display: none;
+  }
+  .footer-card .footer-text-content {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.8rem;
+  }
+  .useful-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .useful-links-list li {
+    background-image: url(../images/icon_arrow_blue_light_tint.svg);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    -webkit-padding-start: 0;
+            padding-inline-start: 0;
+    background-position: left;
+  }
+  .useful-links-list li a {
+    text-decoration: underline;
+    -webkit-padding-start: 2em;
+            padding-inline-start: 2em;
+    font-weight: 500;
+  }
+  .useful-links-list li a:hover, .useful-links-list li a:focus {
+    text-decoration: none;
+  }
+  .contact-links-list {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5em;
+  }
+  .contact-links-list a {
+    text-decoration: underline;
+    -webkit-padding-start: 1.75em;
+            padding-inline-start: 1.75em;
+    font-weight: 500;
+    word-break: break-all;
+  }
+  .contact-links-list a:hover, .contact-links-list a:focus {
+    text-decoration: none;
+  }
+  .contact-links-list .contact-us-link {
+    background-image: url(../images/icon_arrow_blue_light_tint.svg);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: left;
+  }
+  .contact-links-list .email-us-link {
+    background-image: url(../images/icon_email_blue_tint.svg);
+    background-repeat: no-repeat;
+    background-size: 1em;
+    background-position: center left;
+  }
+  .icon-wrapper {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+  }
+  .icon-wrapper .icon-background {
+    background-color: white;
+    height: 2.7em;
+    width: 2.75em;
+    border-radius: 50%;
+    position: relative;
+  }
+  .icon-wrapper .social-icon {
+    color: hsl(211, 100%, 18%);
+    font-size: 3rem;
+    position: absolute;
+    left: 0.275em;
+  }
+  .icon-wrapper .social-icon:nth-child(4) {
+    left: 0.35em;
+  }
+  .footer-logo-wrapper {
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+@media (min-width: 1024px) {
+  .guide-dogs-header {
+    height: 13.5em;
+  }
+  .guide-dogs-header .logo-header {
+    width: 9.5em;
+    -webkit-padding-after: 1.5em;
+            padding-block-end: 1.5em;
+    -webkit-margin-start: 1em;
+            margin-inline-start: 1em;
+  }
+  .guide-dogs-header .accessible-link-header,
+  .guide-dogs-header .shop-link-header {
+    display: block;
+    text-decoration: underline;
+    font-weight: 500;
+    font-size: 2rem;
+  }
+  .guide-dogs-header .accessible-link-header:hover, .guide-dogs-header .accessible-link-header:focus,
+  .guide-dogs-header .shop-link-header:hover,
+  .guide-dogs-header .shop-link-header:focus {
+    text-decoration: none;
+  }
+  .guide-dogs-header .shop-link-header {
+    background-repeat: no-repeat;
+  }
+  .guide-dogs-header .shop-link-header .shop-link-icon {
+    background-image: url(../images/icon_external_white.svg);
+    background-repeat: no-repeat;
+    padding: 1em 2em 1em 1.5em;
+    background-position: center right 1.5em;
+    background-size: 1em 1em;
+    font-size: 1.75rem;
+  }
+  .guide-dogs-header .search-bar-header {
+    display: block;
+    border-radius: 0.5em;
+    height: 3em;
+    width: 15em;
+    padding: 1em;
+  }
+  .guide-dogs-header .nav-toggle {
+    display: none;
+  }
+  .header-top-wrapper {
+    align-items: center;
+  }
+  .button-link-wrapper {
+    justify-content: flex-start;
+    -webkit-padding-after: 3em;
+            padding-block-end: 3em;
+    -webkit-margin-start: 1em;
+            margin-inline-start: 1em;
+  }
+  .guide-dogs-main-content .site-nav-header {
+    display: flex;
+    flex-direction: row;
+    background-color: white;
+    color: hsl(211, 100%, 18%);
+    justify-content: space-evenly;
+  }
+  .guide-dogs-main-content .site-nav-header a {
+    padding: 1em 2em;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .guide-dogs-main-content .site-nav-header a:hover, .guide-dogs-main-content .site-nav-header a:focus {
+    background-color: hsl(201, 100%, 74%);
+  }
+  .hero-wrapper {
+    background-image: url("../images/guiding_christmas_advert.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 35em;
+    background-position: 50% 30%;
+    flex-direction: row;
+    align-items: center;
+    -webkit-margin-after: 5em;
+            margin-block-end: 5em;
+  }
+  .hero-image {
+    display: none;
+  }
+  .hero-content {
+    display: flex;
+    flex-direction: column;
+    height: 23em;
+    width: 28em;
+    -webkit-margin-start: 3em;
+            margin-inline-start: 3em;
+    border-radius: 0.5em;
+  }
+  .hero-content .hero-title {
+    font-size: 5rem;
+    line-height: 1.25em;
+  }
+  .hero-content .hero-text {
+    font-size: 2.5rem;
+  }
+  .services-component {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 3em;
+    padding-inline: 4em;
+    padding-block: 6em;
+  }
+  .video-component {
+    padding-inline: 4em;
+    -webkit-padding-before: 2em;
+            padding-block-start: 2em;
+    -webkit-padding-after: 4em;
+            padding-block-end: 4em;
+  }
+  .popular-links-component {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 1fr;
+    padding-inline: 4em;
+  }
+  .popular-links .popular-section-heading {
+    -webkit-padding-start: 2em;
+            padding-inline-start: 2em;
+  }
+  .footer-copyright-logo-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 1fr;
+    -moz-column-gap: 0.5em;
+         column-gap: 0.5em;
+  }
+  .footer-sitelinks-wrapper {
+    flex-direction: row;
+    gap: 2em;
+    -webkit-padding-after: 1.75em;
+            padding-block-end: 1.75em;
+  }
+  .footer-sitelinks-wrapper li {
+    padding-inline: 1em;
+    border-right: 1px solid hsla(0, 0%, 50%, 0.5);
+  }
+}
+@media (min-width: 1440px) {
+  .guide-dogs-header {
+    height: 8.5em;
+    display: flex;
+    justify-content: space-between;
+  }
+  .header-top-wrapper {
+    display: grid;
+    grid-template-columns: 1.5fr 1.5fr 0.5fr 1fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+    justify-items: center;
+  }
+  .guide-dogs-header .header-top-wrapper .logo-header {
+    width: 11em;
+    -webkit-margin-end: 10em;
+            margin-inline-end: 10em;
+  }
+  .guide-dogs-header .search-bar-header {
+    width: 16em;
+  }
+  .button-link-wrapper {
+    display: block;
+    -webkit-margin-before: 2.5em;
+            margin-block-start: 2.5em;
+  }
+  .guide-dogs-main-content .site-nav-header a {
+    padding: 1em 3em;
+  }
+  .hero-content {
+    -webkit-margin-start: 5.5em;
+            margin-inline-start: 5.5em;
+  }
+  .services-component,
+  .popular-links-component,
+  .video-component {
+    padding-inline: 6.5em;
+  }
+  .popular-links .popular-section-heading {
+    -webkit-padding-start: 3em;
+            padding-inline-start: 3em;
+  }
+  .useful-links-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 1500px) {
+  .guide-dogs-header {
+    padding-inline: 8em;
+  }
+  .guide-dogs-header .search-bar-header {
+    width: 18em;
+  }
+  .button-link-wrapper {
+    -webkit-padding-end: 3.5em;
+            padding-inline-end: 3.5em;
+  }
+  .button-link-wrapper .header-button-link {
+    font-size: 2rem;
+    padding: 0.75em 1em;
+  }
+  .site-nav-header {
+    margin-inline: 3em;
+  }
+  .services-card-left {
+    -webkit-margin-start: 13em;
+            margin-inline-start: 13em;
+  }
+  .services-card-right {
+    -webkit-margin-end: 13em;
+            margin-inline-end: 13em;
+  }
+  .video-component {
+    margin-inline: 13em;
+  }
+  .popular-links {
+    margin-inline: 13em;
+  }
+}/*# sourceMappingURL=styles.css.map */
